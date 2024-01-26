@@ -101,6 +101,7 @@ const Navbar: React.FC = () => {
                 <Link
                   to={"/profile/" + item.id}
                   style={{ textDecoration: "none" }}
+                  onClick={() => (inputs.search = "")}
                 >
                   <Box
                     sx={{

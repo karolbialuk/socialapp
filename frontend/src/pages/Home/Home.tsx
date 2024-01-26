@@ -37,6 +37,7 @@ const Home: React.FC = () => {
     text: string;
     img: string;
     id: string;
+    userId: string;
   }
 
   interface postData {
@@ -200,7 +201,7 @@ const Home: React.FC = () => {
             data={item.data}
             text={item.text}
             img={item.img}
-            idUser={userId}
+            idUser={item.userId}
             idPost={item.id}
           />
         );
